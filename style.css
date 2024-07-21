@@ -217,6 +217,24 @@ h2 {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 700px) {
+
+    .header__main,
+    .header__list {
+        gap: 10px;
+    }
+
+    .header__heading {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__logo {
+        padding-left: 20px;
+    }
+}
+
 /* @media (min-width:700px) {
     header {
         padding: 1em 2em;
