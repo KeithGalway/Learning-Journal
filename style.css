@@ -217,16 +217,17 @@ h2 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 700px) {
-
+@media (max-width: 414px) {
+    /* HEADER */
+    .header,
     .header__main,
     .header__list {
         gap: 10px;
     }
 
-    .header__heading {
-        font-size: 0.8em;
-        margin-left: -25px;
+    .header__heading h1 {
+        width: 110px;
+        font-size: 1.2em;
         text-align: center;
         line-height: 20px;
     }
@@ -234,13 +235,15 @@ h2 {
     .header__list > li {
         text-align: center;
         line-height: 15px;
+        font-weight: 700;
     }
-}
 
-@media (max-width: 414px) {
     .header__logo {
         padding-left: 20px;
     }
+
+    /* MAIN HERO */
+    
 }
 
 /* @media (min-width:700px) {
