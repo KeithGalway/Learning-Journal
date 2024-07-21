@@ -226,10 +226,18 @@ h2 {
 
     .header__heading {
         font-size: 0.8em;
+        margin-left: -25px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .header__list > li {
+        text-align: center;
+        line-height: 15px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
     .header__logo {
         padding-left: 20px;
     }
