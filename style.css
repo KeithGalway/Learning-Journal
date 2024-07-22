@@ -67,12 +67,10 @@ h2 {
     color: black;
 }
 
-/* MAIN */
-
-/* HERO */
+/* MAIN HERO */
 
 .main__article {
-    background-image: url('assets/preview.webp');
+    background-image: url('assets/hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -91,22 +89,22 @@ h2 {
     z-index: -1;
 }
 
-.main-title,
-.main-description {
+.main__title,
+.main__description {
     color: white;
 }
 
-.main-title {
+.main__title {
     padding: 410px 0 15px 60px;
 }
 
-.main-description {
+.main__description {
     width: 60%;
     padding: 0 0 60px 60px;
     font-size: 1em;
 }
 
-/* ENTRIES */
+/* MAIN ENTRIES */
 
 .main__entries {
     display: flex;
@@ -146,11 +144,11 @@ h2 {
     font-weight: 700;
 }
 
-/* ABOUT */
+/* MAIN ABOUT */
 
 .about__header {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 20px;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +174,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-/* ARTICLE-PAGE */
+/* MAIN ARTICLE-PAGE */
 
 .main__article-page {
     padding-bottom: 20px;
@@ -218,6 +216,16 @@ h2 {
 /* MEDIA QUERIES */
 
 @media (max-width: 414px) {
+    /* GLOBAL */
+    p {
+        line-height: 18px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        line-height: 30px;
+    }
+
     /* HEADER */
     .header,
     .header__main,
@@ -243,7 +251,69 @@ h2 {
     }
 
     /* MAIN HERO */
-    
+    .main__article {
+        background-position: center;
+    }
+
+    .main__title {
+        padding: 20px 0 15px 20px;
+    }
+
+    .main__description {
+        width: 85%;
+        padding: 0 0 80px 20px;
+        font-size: 1em;
+    }
+
+    /* MAIN ENTRIES */
+    .entries__container {
+        padding: 0 25px 0;
+        gap: 25px;
+    }
+
+    .entries__entry {
+        width: 100%;
+    }
+
+    /* MAIN ABOUT */
+    .about__header {
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    .about__text {
+        padding: 30px;
+    }
+
+    .about__heading {
+        margin-bottom: 20px;
+    }
+
+    .about__article {
+        width: 85%;
+    }
+
+    .article__section > * {
+        padding-bottom: 5px;
+    }
+
+    .article__section:first-child {
+        padding-bottom: 10px;
+    }
+
+    /* MAIN ARTICLE */
+    .article-page__section {
+        width: 85%;
+    }
+
+    .article-page__img {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer__caption {
+        font-size: 0.7em;
+    }
 }
 
 /* @media (min-width:700px) {
